@@ -2,24 +2,23 @@
 <html lang="en-US">
 
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Abigail Doyle </title>
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     </head>
 
     <body>
-        <header>
+        <header class="header">
 
-            <h1>Abigail Doyle</h1>
-            <img src="/assets/images/Profile Image.jpg" alt="Profile Image">
-
+            <img class="profile-image" src="/assets/images/Profile Image.png" alt="Profile Image">
+            <h1 class="h1">Abigail Doyle</h1>
             <nav>
-                <ul>
-                    <li><a href=#>About Me</a></li>
-                    <li><a href=#>Work</a></li>
-                    <li><a href=#>Contact Form</a></li>
-                    <li><a href=#>Curriculum Vitae</a></li>
+                <ul class="nav-list">
+                    <li><a class ="a" href=#>About Me</a></li>
+                    <li><a class ="a" href=#>Applications</a></li>
+                    <li><a class ="a" href=#>Contact Form</a></li>
+                    <li><a class ="a" href=#>Curriculum Vitae</a></li>
                 </ul>
                 <!-- these sections will need nav links -->
                 <!-- change link colorings with css -->
@@ -30,12 +29,16 @@
 
         <main>
             <Section>
-                <article>
-                    <h2>About Me</h2>
-                    <h3>Volunteer Work</h3>
-                    <h3>History</h3>
-                    <h3>Interests and Hobbies</h3>
-                    <!-- inline flexbox with links to new pages -->
+                <article class="about-me">
+                    <div class="about-me-lhs">
+                        <h2>About Me</h2> 
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, maiores? Obcaecati, ipsa quas dolore nam accusamus veniam doloribus optio minima, consequuntur maxime nesciunt perspiciatis ab, in dolor consectetur sit neque.</p>
+                    </div>
+
+                    <div class="about-me-rhs">
+                        <h3><a href="/subpages/volunteer-work.html">Volunteer Work</a></h3>
+                        <h3><a href="/subpages/career.html">Career</a></h3>
+                    </div>
                 </article>
             </Section>
 
@@ -53,26 +56,20 @@
 
             <Section>
                 <h2>Contact Me</h2>
-                <h3>Phone number</h3>
-                <p>(423)360-8264</p> 
-                <!-- link number to call -->
-                <h3>Email address</h3>
-                <p>abigaildoyle3@gmail.com</p>
-                <!-- link to create email -->
-                <h3>Github Portfolio</h3>
-                <p>Github link</p>
-                <!-- link to github -->
-                <h3>LinkedIn</h3>
-                <p>Linkedin page</p>
-                <!-- link it -->
+                <h4>Email address</h4>
+                <a href="mailto:abigaildoyle3@gmail.com">abigaildoyle3@gmail.com</a>
+                <h4>Github Portfolio</h4>
+                <a href="https://github.com/abbeydoyle">AbbeyDoyle</a>
+                <h4>LinkedIn</h4>
+                <a href="www.linkedin.com/in/abigaildoyle3">AbigailDoyle3</a>
             </Section>
 
         </main>
 
         <footer>
             <span>Thank you for visiting!</span>
+            <span>If you're interested, please leave feedback on your user experience <a href="/subpages/feedback-form.html">here</a>.</span>
             <!-- add badges here??? -->
-            <!-- create a form section for user feedback??? -->
         </footer>
     </body>
 
