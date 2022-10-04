@@ -9,26 +9,26 @@
     </head>
 
     <body>
-        <header class="header">
 
-            <img class="profile-image" src="/assets/images/Profile Image.png" alt="Profile Image">
-            <h1 class="h1">Abigail Doyle</h1>
+
+        <header>
+            <div class="header">
+                <img class="profile-image" src="/assets/images/Profile Image.png" alt="Profile Image">
+                <h1 class="h1">Abigail Doyle</h1>
+            </div>
             <nav>
                 <ul class="nav-list">
-                    <li><a class ="a" href=#>About Me</a></li>
-                    <li><a class ="a" href=#>Applications</a></li>
-                    <li><a class ="a" href=#>Contact Form</a></li>
-                    <li><a class ="a" href=#>Curriculum Vitae</a></li>
+                    <li><a class ="nava" href=#>About Me</a></li>
+                    <li><a class ="nava" href=#>Applications</a></li>
+                    <li><a class ="nava" href=#>Contact Form</a></li>
+                    <li><a class ="nava" href=#>Curriculum Vitae</a></li>
                 </ul>
-                <!-- these sections will need nav links -->
-                <!-- change link colorings with css -->
-                <!-- add profile picture -->
             </nav>
 
         </header>
 
-        <main>
-            <Section>
+        <!-- <main> -->
+            <!-- <Section>
                 <article class="about-me">
                     <div class="about-me-lhs">
                         <h2>About Me</h2> 
@@ -40,34 +40,114 @@
                         <h3><a href="/subpages/career.html">Career</a></h3>
                     </div>
                 </article>
+            </Section> -->
+            
+
+
+            <Section class="row justify-center">
+                <div class="card-column">
+                    <figure class="card code-card">
+                        <h3 class="card-header">About Me</h3>
+                        <div class="card-body">
+                            <p>My name is Abbey Doyle. I’m a chemical engineer currently working for the Emergency Response Branch of the CDC. After growing up in Kingsport, TN I left to get my undergraduate degree in Chattanooga, TN. There I studied chemical engineering and biology while in the Brock Scholars Program. I completed an undergraduate thesis while researching the pathogenicity of Vibrio cholerae and completed internships and the Center for Disease Control and Prevention and Chattem Sanofi. After graduating I began my career as a research chemist at the CDC through Battelle and have worked in the Lung Injury and COVID-19 responses. In my free time I like to backpack, read, run, play the violin or piano, and take my dog to parks.
+                            Throughout my education and career I learned languages like Python, MATLAB, VBA, Java, C++, and CAD software. I became fascinated with all of the minor differences in softwares that make or break a code and love the challenges that arise when writing a method start to finish.</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="card-column">
+                    <figure class="card code-card">
+                        <h3 class="card-header">Volunteer Work</h3>
+                        <div class="card-body">
+                            <p> I've spent time working with the parks department, women's shelters, at risk youth, and animal shelters. Read more about their mission statements <a href="/subpages/volunteer-work.html">here</a>!</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="card-column">
+                    <figure class="card code-card">
+                        <h3 class="card-header">Career</h3>
+                        <div class="card-body">
+                            <p> My roller-coaster of a job history includes everything from the restaurant industry to tutoring to environmental engineering. If you'd like to try to follow these unintuitive job paths, check it out <a href="/subpages/career.html">here</a>.</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="card-column">
+                    <figure class="card code-card">
+                        <h3 class="card-header">Hobbies</h3>
+                        <div class="card-body">
+                            <p> I love reading, running, music, backpacking, and a slew of other things. If you'd like to hear how I got into them, check <a href="/subpages/interests.html">here</a>!</p>
+                        </div>
+                    </figure>
+                </div>
             </Section>
 
+
+            <hr class="rounded">
+
+
             <Section>
-                <article>
-                    <h2>Applications</h2>
-                    <h3>Project 1</h3>
-                    <h3>Project 2</h3>
-                    <h3>Project 3</h3>
+                <h2>Applications</h2>
+                <article class="applications">
+                    <div class="flex-app">
+                        <h3 class="app-header">Project 1</h3>
+                    </div>
+                    <div class="flex-app">
+                        <h3 class="app-header">Project 2</h3>
+                    </div>
+                    <div class="flex-app">
+                        <h3 class="app-header">Project 3</h3>
+                    </div>
+                    <div class="flex-app">
+                        <h3 class="app-header">Project 4</h3>
+                    </div>
+                    <div class="flex-app">
+                        <h3 class="app-header">Project 5</h3>
+                    </div>
                     <!-- inline flexbox -->
                     <!-- project 1 must be bigger than the rest -->
                     <!-- must have titled images with nav links -->
                 </article>
             </Section>
 
+
+
+
+
             <Section>
                 <h2>Contact Me</h2>
-                <h4>Email address</h4>
-                <a href="mailto:abigaildoyle3@gmail.com">abigaildoyle3@gmail.com</a>
-                <h4>Github Portfolio</h4>
-                <a href="https://github.com/abbeydoyle">AbbeyDoyle</a>
-                <h4>LinkedIn</h4>
-                <a href="www.linkedin.com/in/abigaildoyle3">AbigailDoyle3</a>
+                <main class="contact-me">
+                    <div>
+                        <img src="/assets/images/google.png" alt="Google logo" class="contact-pic">
+                        <a href="mailto:abigaildoyle3@gmail.com">abigaildoyle3@gmail.com</a>
+                    </div>
+                    <div>
+                        <img src="/assets/images/github.png" alt="Github logo" class="contact-pic">
+                        <a href="https://github.com/abbeydoyle">Github Portfolio</a>
+                    </div>
+                    <div>
+                        <img src="/assets/images/github.png" alt="LinkedIn logo" class="contact-pic">
+                        <a href="www.linkedin.com/in/abigaildoyle3">LinkedIn Profile</a>
+                    </div>
+                </main>
             </Section>
 
-        </main>
+
+
+
+
+
+
+        <!-- Load font icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- The social media icon bar -->
+        <div class="icon-bar">
+        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="github"><i class="fa fa-github"></i></a> 
+        </div>
 
         <footer>
-            <span>Thank you for visiting!</span>
+            <div>Thank you for visiting!</div>
             <span>If you're interested, please leave feedback on your user experience <a href="/subpages/feedback-form.html">here</a>.</span>
             <!-- add badges here??? -->
         </footer>

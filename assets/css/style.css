@@ -1,173 +1,381 @@
-* {
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    cursor: url(/assets/images/world-cursor.png), crosshair;
-    /* figure out how to get image cursor to work */
-    /* background-color: #e7f0e4; */
-    background-color: #f3f7f2;
+/* color scheme hand selected */
+:root {
+    /* --saddle-brown: #893f04;
+    --bronze: #c67f43;
+    --antique-brass: #d49b7e;
+    --desert-sand: #ddb8a6;
+    --artichoke: #989e8b;
+    --xanadu: #7b876d; */
+    --copper-rose: #936865;
+    --coriander: #C4CEB4;
+    --waterloo: #777a92;
+    --armadillo: #514B3D;
+    --kelp: #54513F;
+    --derby-brown: #52221A;
+    --bronze: #c67f43;
+    --muted-blue: #9ca0bb;
+    --wafer: #dccac980;
+
+  }
+
+  /* general formatting begin */
+  html {
+    /* makes 1rem=10px */
+    font-size: 62.5%;
+    margin:0;
+  }
+
+  /* content highlight and background colors */
+
+  ::selection {
+    background-color: var(--waterloo);
+    color: var(--derby-brown);
+  }
+
+  
+  body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    background: linear-gradient(
+        rgb(198, 211, 182)0%,
+        rgb(168, 177, 150)50%, 
+        rgb(139, 143, 120)80%, 
+        rgb(111, 111, 91)95%,
+        rgb(84, 81, 63)100%
+        );
     margin: 0;
-    border: solid 0.02px;
+  }
+
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-bottom: 0.625rem;
+        color: var(--derby-brown);
+        font-weight: 700;
+        line-height: 1.1;
 }
 
-/* header formatting start */
-.profile-image {
-    width: 100%;
-    max-width: 200px;
-}
+h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+  }
 
-.header, .nav-list , .h1, .a {
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    color: #2c3e23;
-    background-color: #b7bca2;
-    flex-direction:row;
-    list-style-type: none;
-    text-decoration-style: none;
-    
-}
+  p {
+    margin-bottom: 1rem;
+  }
 
-.a {
-    padding: 5px;
-    background-color: #b7bca2;
-}
-
-/* li {
-    flex-direction:row;
-    list-style-type: none;
-    text-decoration-style: none;
-} */
-
-/* header formatting end */
-
-/* general formatting start */
 a:link {
-    color:#2c3e23;
+    color:var(--kelp);
     text-decoration: none;
     text-decoration-style: none;
 }
 a:visited {
-    color: #893F04;
+    color: var(--waterloo);
     text-decoration-style: none;
     text-decoration: none;
 }
 a:hover {
-    color: #c67f43;
+    color: var(--bronze);
     text-decoration-style: none;
     text-decoration: underline;
 }
 a:active {
-    color:#893F04;
+    color:var(--waterloo);
     text-decoration-style: none;
     text-decoration: underline;
 }
 
-
-h2 {
-    color: #2c3e23;
-}
-
-h3 {
-    color:#4a673b;
-}
+hr.rounded {
+    border-top: 0.25rem solid var(--kelp);
+    border-radius: 1rem;
+  }
 
 /* general formatting end */
 
-/* about me formatting start */
-/* .about-me {
+
+/* header formatting begin */
+  .profile-image {
+    width: 100%;
+    max-width: 200px;
+}
+
+.header {
+    text-align: center;
+}
+
+.nav-list {
     display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content:space-between;
+    flex-direction:row;
+    list-style-type: none;
+    text-decoration-style: none;
+    background-color: var(--wafer);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
+header {
+    padding-bottom: 5rem;
+}
+
+.nava {
+    padding: 0rem 1rem;
+    display:flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    flex-direction:row;
+    list-style-type: none;
+    text-decoration-style: none;
+    align-content: flex-end;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
+/* header formatting end */
+
+/* about me formatting begin */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    flex-wrap: wrap;
-    @media screen and (min-width: 640px) {
-        flex-direction: column;
-        max-width: 100%;
-        display: block;
-    }
-}
-
-.about-me-lhs {
-    max-height:400px;
-    min-width: 60%;
-    @media screen and (min-width: 640px) {
-        max-width: 100%;
-        display: block;
-    }
-}
-
-.about-me-rhs {
-    max-height:400px;
-    min-width: 40%;
-    @media screen and (min-width: 640px) {
-        max-width: 100%;
-        display: block;
-}
-} */
-
-.about-me {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 100%;
-    background-color: #b7bca2;
-    padding: 1rem;
-}
-
-.about-me-rhs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-@media screen and (min-width: 992px) {
-    .about-me-lhs {
-      min-width: 60%;
-      inline-size: 60%;
-    }
-    .about-me-rhs {
-        min-width: 40%;
-      }
-  }
-
-@media screen and (max-width: 992px) {
-    .about-me-lhs {
-      min-width: 60%;
-      inline-size: 60%;
-    }
-    .about-me-rhs {
-        min-width: 40%;
-      }
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
   
-  @media screen and (max-width: 768px) {
-    .about-me-lhs {
-        min-width: 100%;
-        inline-size: 100%;
-      }
-      .about-me-rhs {
-          min-width: 100%;
-        }
+  .justify-center {
+    justify-content: center;
   }
-
-  @media screen and (max-width: 576px) {
-    .about-me-lhs {
-        min-width: 100%;
-        inline-size: 100%;
-      }
-      .about-me-rhs {
-          min-width: 100%;
-        }
+  
+  /*  base column width 100% and wupdate it using media queries for larger screen sizes */
+  .card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 5.5rem;
   }
-
-  /* about me section formatting end */
-
-
-
-footer {
+  
+  /* make each code card a flexbox column to align and justify content within it */
+  .code-card {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--copper-rose);
+  
+    /* outline is like border, but on the outside of the box instead of inside */
+    outline: 2px dashed var(--copper-rose);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .code-card .card-header {
+    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--copper-rose);
+    color: var(--derby-brown);
+    border: 2px solid var(--copper-rose);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+  .code-card:hover,
+  .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px var(--copper-rose), 0 0 15px var(--copper-rose);
+  }
+
+  .code-card {
+    flex-grow: 1;
+  }
+
+  .code-card .card-body {
+    /* set styles to make it so code wraps instead of overflowing */
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    color: var(--copper-rose);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* on <pre> click, select all contents so the code is highlighted */
+  .code-card .card-body:active {
+    user-select: all;
+  }
+  
+  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+  @media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:first-child {
+      flex-grow: 1;
+    }
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .card-column {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+  
+/* about me formatting end */
+
+
+
+/* app formatting begin */
+
+.applications {
+    display: flex;
     flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-top: 7rem;
 }
+
+.flex-app {
+    padding: 0rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 5.5rem;
+}
+
+.flex-app:nth-of-type(1) {
+    width: 100%;
+}
+
+.flex-app:nth-of-type(2) {
+    width: 60%;
+}
+
+.flex-app:nth-of-type(3) {
+    width: 40%;
+}
+
+.flex-app:nth-of-type(4) {
+    width: 40%;
+}
+
+.flex-app:nth-of-type(5) {
+    width: 60%;
+}
+
+
+.flex-app .app-header {
+    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 2rem;
+    min-height: 100%;
+    color: var(--derby-brown);
+    border: 2px solid var(--copper-rose);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .flex-app:hover,
+  .flex-app:hover {
+    box-shadow: inset 0px 0px 8px var(--copper-rose), 0 0 15px var(--copper-rose);
+  }
+
+
+
+/* contact formatting begin */
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    color: var(--coriander);
+    font-size: 2rem;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: var(--copper-rose);
+  }
+  
+  .google {
+    background: var(--derby-brown);
+    color: var(--coriander);
+  }
+  
+  .linkedin {
+    background: var(--derby-brown);
+    color: var(--coriander);
+  }
+  
+  .github {
+    background: var(--derby-brown);
+    color: var(--coriander);
+  }
+
+  .contact-pic {
+    max-width: 3rem;
+  }
+
+.contact-me{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* contact formatting end */
+
+
+
+
+/* footer formatting begin */
+
+footer {
+    text-align: center;
+}
+
+/* footer formatting begin */
