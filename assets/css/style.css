@@ -22,7 +22,7 @@
   html {
     /* makes 1rem=10px */
     font-size: 62.5%;
-    margin:0;
+    padding:2.5rem;
   }
 
   /* content highlight and background colors */
@@ -145,52 +145,55 @@ header {
     list-style-type: none;
     text-decoration-style: none;
     align-content: flex-end;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
 }
 
 /* header formatting end */
 
 /* about me formatting begin */
 
-.row {
+.about-me-section {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
+    flex-wrap: wrap;
+}
   
-  .justify-center {
-    justify-content: center;
-  }
-  
-  /*  base column width 100% and wupdate it using media queries for larger screen sizes */
-  .card-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
-    transition: flex-basis 500ms linear;
-    margin-bottom: 5.5rem;
-  }
-  
-  /* make each code card a flexbox column to align and justify content within it */
-  .code-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: var(--copper-rose);
-  
-    /* outline is like border, but on the outside of the box instead of inside */
+.about-me:nth-of-type(1) {
+    height: 100%;
+    width: 50%;
+}
+
+.about-me:nth-of-type(2) {
+    height: 100%;
+    width: 30%;
+}
+
+.about-me:nth-of-type(3) {
+    height: 100%;
+    width: 30%;
+}
+
+.about-me:nth-of-type(4) {
+    height: 100%;
+    width: 30%;
+}
+
+.about-me {
     outline: 2px dashed var(--copper-rose);
-    outline-offset: -2px;
     transition: all 0.5s ease-in-out;
-  }
-  
-  .code-card .card-header {
-    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+    padding: 2rem 2rem;
+    margin: 2rem 2rem;
+    color: var(--derby-brown);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    /* transparent background image to be added of apps */
+}
+
+.about-me:hover,
+.am-header:hover {
+    box-shadow: inset 0 0 5rem var(--copper-rose), 0 0 5rem var(--copper-rose);
+}
+
+.about-me .am-header {
     position: relative;
     margin: -4rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
@@ -199,20 +202,13 @@ header {
     border: 2px solid var(--copper-rose);
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
-  }
-  
-  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-  .code-card:hover,
-  .code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px var(--copper-rose), 0 0 15px var(--copper-rose);
-  }
+}
 
-  .code-card {
+.about-me {
     flex-grow: 1;
-  }
+}
 
-  .code-card .card-body {
-    /* set styles to make it so code wraps instead of overflowing */
+.about-me .am-body {
     white-space: pre-wrap;
     overflow: auto;
     tab-size: 4;
@@ -221,39 +217,8 @@ header {
     border-radius: 8px;
     display: flex;
     align-items: center;
-  }
-  
-  /* on <pre> click, select all contents so the code is highlighted */
-  .code-card .card-body:active {
-    user-select: all;
-  }
-  
-  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-  @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    /* select the last child to grow to full width if it has space to grow */
-    .card-column:first-child {
-      flex-grow: 1;
-    }
-  }
-  
-  /* media query for larger screens */
-  @media screen and (min-width: 992px) {
-    header {
-      width: 75%;
-    }
-  
-    .card-column {
-      flex: 0 0 25%;
-      max-width: 25%;
-    }
-  }
-  
+  } 
+
 /* about me formatting end */
 
 
@@ -262,18 +227,12 @@ header {
 
 .applications {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    margin-top: 7rem;
+    margin:5rem 0rem;
 }
 
-.flex-app {
-    padding: 0rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
-    transition: flex-basis 500ms linear;
-    margin-bottom: 5.5rem;
-}
+
 
 .flex-app:nth-of-type(1) {
     width: 100%;
@@ -296,23 +255,24 @@ header {
 }
 
 
-.flex-app .app-header {
-    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
-    position: relative;
-    margin: -4rem 0 1.5rem 0;
-    padding: 2rem;
-    min-height: 100%;
-    color: var(--derby-brown);
-    border: 2px solid var(--copper-rose);
-    border-radius: 8px;
+.flex-app {
+    outline: 2px dashed var(--copper-rose);
     transition: all 0.5s ease-in-out;
-  }
+    padding: 2rem 0rem;
+    margin: 2rem 0rem;
+    /* transparent background image to be added of apps */
+}
 
-  .flex-app:hover,
-  .flex-app:hover {
-    box-shadow: inset 0px 0px 8px var(--copper-rose), 0 0 15px var(--copper-rose);
-  }
+.flex-app:hover {
+    box-shadow: 0 0 5rem var(--copper-rose);
+}
 
+#app1 {
+    background-image: url(/Users/abbeydoyle/bootcamp/module-two-challenge/assets/images/ghibli-bonsai.jpg)
+}
+
+
+/* app formatting end */
 
 
 /* contact formatting begin */
@@ -320,6 +280,7 @@ header {
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
     position: fixed;
+    margin-left: -3.5rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -365,6 +326,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 3rem;
 }
 
 /* contact formatting end */
@@ -376,6 +338,7 @@ header {
 
 footer {
     text-align: center;
+    padding-top: 2rem;
 }
 
 /* footer formatting begin */
