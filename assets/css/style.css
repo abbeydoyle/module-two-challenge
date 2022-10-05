@@ -157,12 +157,16 @@ header {
     flex-wrap: wrap;
 }
   
-.about-me:nth-of-type(1) {
-    height: 100%;
-    width: 50%;
+.about-me-lhs {
+    /* height: 100%; */
+    flex: 0 0 50%;
+}
+.about-me-rhs {
+    flex: 0 0 40%;
 }
 
-.about-me:nth-of-type(2) {
+
+/* .about-me:nth-of-type(2) {
     height: 100%;
     width: 30%;
 }
@@ -175,7 +179,7 @@ header {
 .about-me:nth-of-type(4) {
     height: 100%;
     width: 30%;
-}
+} */
 
 .about-me {
     outline: 2px dashed var(--copper-rose);
@@ -204,9 +208,9 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
-.about-me {
+/* .about-me {
     flex-grow: 1;
-}
+} */
 
 .about-me .am-body {
     white-space: pre-wrap;
@@ -236,6 +240,11 @@ header {
 
 .flex-app:nth-of-type(1) {
     width: 100%;
+    background-image: url("/assets/images/ghibli-bonsai.jpg");
+}
+
+.flex-app:nth-of-type(1) :not(.app-header) {
+    opacity: 0;
 }
 
 .flex-app:nth-of-type(2) {
@@ -267,8 +276,8 @@ header {
     box-shadow: 0 0 5rem var(--copper-rose);
 }
 
-#app1 {
-    background-image: url(/Users/abbeydoyle/bootcamp/module-two-challenge/assets/images/ghibli-bonsai.jpg)
+#app-header {
+    opacity: 1;
 }
 
 
