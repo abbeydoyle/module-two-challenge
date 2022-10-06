@@ -36,13 +36,28 @@ There is no installation required for this online portfolio. Simply follow this 
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+There are 6 main sections of this repository:
+
+- [Assets Folder](https://github.com/abbeydoyle/module-two-challenge/tree/main/assets) - Contains all [webpage images](https://github.com/abbeydoyle/module-two-challenge/tree/main/assets/images) and the CSS Folder
+
+- [CSS Folder](https://github.com/abbeydoyle/module-two-challenge/tree/main/assets/css) - Contains all CSS Styling for the entire webpage along with a CSS graveyard file, where outdated CSS is stored for future reference
+
+- [HTML](https://github.com/abbeydoyle/module-two-challenge/blob/main/index.html) - Contains the HTML encoding the Portfolio Homepage
+
+- [Subpages Folder](https://github.com/abbeydoyle/module-two-challenge/tree/main/subpages) - Contains all child html pages for the html Portfolio home parent page along with an HTML graveyard file, used for unused code for future reference
+
+- [License](https://github.com/abbeydoyle/module-two-challenge/blob/main/LICENSE) - Contains the webpage license
+
+- [ReadMe](https://github.com/abbeydoyle/module-two-challenge/blob/main/README.md) - This file containing an executive overview of the project
+
+
+<!-- Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     ```md
     ![alt text](assets/images/screenshot.png)
-    ```
+    ``` -->
 
 ## Credits
 
@@ -70,19 +85,39 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+![badmath](https://img.shields.io/github/repo-size/abbeydoyle/module-two-challenge?color=pink&style=plastic)
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+![badmath](https://img.shields.io/github/issues-closed-raw/abbeydoyle/module-two-challenge?color=pink&style=plastic)
+
+![badmath](https://img.shields.io/github/issues-raw/abbeydoyle/module-two-challenge?color=pink&style=plastic)
+
+![badmath](https://img.shields.io/github/license/abbeydoyle/module-two-challenge?color=pink&style=plastic)
+
+![badmath](https://img.shields.io/github/commits-since/abbeydoyle/module-two-challenge/8215fd4/main?color=pink&style=plastic)
+
+![badmath](https://img.shields.io/github/last-commit/abbeydoyle/module-two-challenge?color=pink&style=plastic)
+
+![badmath](https://img.shields.io/maintenance/yes/2022?color=pink&style=plastic)
+
+
+<!-- ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+
+Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time. -->
 
 ## Features
 
 This page features:
 
-- fixed social media bar
-- contact links
+- Fixed social media bar
+- Contact links
+- Media screen compatibility
+- Nav bar with linked sections
+- Glowing sections
+- Basis for a feedback form
 
 
-If your project has a lot of features, list them here.
+
+<!-- If your project has a lot of features, list them here. -->
 
 <!-- ## How to Contribute
 
