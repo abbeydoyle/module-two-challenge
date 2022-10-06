@@ -168,9 +168,11 @@ nav {
 .about-me-lhs {
     /* height: 100%; */
     flex: 0 0 50%;
+    flex-grow: 1;
 }
 .about-me-rhs {
     flex: 0 0 40%;
+    flex-grow: 1;
 }
 
 
@@ -280,6 +282,21 @@ nav {
 }
 
 
+
+.app-header {
+    position: relative;
+    width: 15rem;
+    margin: -15rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--copper-rose);
+    color: var(--derby-brown);
+    border: 2px solid var(--copper-rose);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+  
+
+
 .flex-app {
     outline: 2px dashed var(--copper-rose);
     transition: all 0.5s ease-in-out;
@@ -373,6 +390,7 @@ nav {
 footer {
     text-align: center;
     padding-top: 2rem;
+    color: var(--derby-brown);
 }
 
 /* footer formatting begin */
