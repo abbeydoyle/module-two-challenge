@@ -29,7 +29,10 @@ The portfolio, as it currently stands, was developed using only HTML and CSS. Th
 
 ## Installation
 
-There is no installation required for this online portfolio. Simply follow this [link](url(""))
+There is no installation required for this online portfolio. Simply follow this [link](https://abbeydoyle.github.io/module-two-challenge/), open in your preferred browser, and peruse the basis for my future web developer portfolio.
+
+<!-- What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. -->
+
 
 ## Usage
 
@@ -44,6 +47,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 ## Credits
 
 This webpage was built using UW Trilogy Bootcamp class materials as references.
+
+I received advice on this challenge from my tutor, Rene Trevino.
 
 ## License
 
@@ -71,6 +76,12 @@ Badges aren't necessary, per se, but they demonstrate street cred. Badges let ot
 
 ## Features
 
+This page features:
+
+- fixed social media bar
+- contact links
+
+
 If your project has a lot of features, list them here.
 
 <!-- ## How to Contribute
@@ -79,4 +90,16 @@ If you created an application or package and would like other developers to cont
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+This webpage is compatible on various screen sizes! Test it out by visiting the page on your computer, tablet, or phone.
+
+Click the inline banner categories to be immediately directed to the corresponding webpage sections.
+
+Test out the fixed social media bar by clicking the icons to be redirected to the corresponding pages.
+
+There are several other embedded links on this site, check them out!
+
+When on a subpage, be immediately redirected back to the homepage by clicking the fixed home icon on the left hand side.
+
+Feel free to test out the radio buttons and check boxes on the Feedback Form but please note that this form cannot currently be submitted.
+
+<!-- Go the extra mile and write tests for your application. Then provide examples on how to run them here. -->
