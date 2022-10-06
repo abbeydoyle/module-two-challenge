@@ -79,12 +79,12 @@ h1 {
   }
 
 a:link {
-    color:var(--kelp);
+    color:var(--derby-brown);
     text-decoration: none;
     text-decoration-style: none;
 }
 a:visited {
-    color: var(--waterloo);
+    color: var(--derby-brown);
     text-decoration-style: none;
     text-decoration: none;
 }
@@ -94,7 +94,7 @@ a:hover {
     text-decoration: underline;
 }
 a:active {
-    color:var(--waterloo);
+    color:var(--derby-brown);
     text-decoration-style: none;
     text-decoration: underline;
 }
@@ -177,22 +177,6 @@ nav {
 
 
 
-
-/* .about-me:nth-of-type(2) {
-    height: 100%;
-    width: 30%;
-}
-
-.about-me:nth-of-type(3) {
-    height: 100%;
-    width: 30%;
-}
-
-.about-me:nth-of-type(4) {
-    height: 100%;
-    width: 30%;
-} */
-
 .about-me {
     outline: 2px dashed var(--copper-rose);
     transition: all 0.5s ease-in-out;
@@ -246,39 +230,98 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     margin:5rem 0rem;
+    justify-content:space-between;
 }
 
 
 
 .flex-app:nth-of-type(1) {
     width: 100%;
-    background-image: url("/assets/images/ghibli-bonsai.jpg");
-    background-position: center;
+}
+
+/*allows background image to be transparent without all child elements being transparent */
+
+.flex-app:nth-of-type(1)::before {
+  width: 100%;
+  content: "";
+  background-image: url('/assets/images/ghibli-bonsai.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
 
 .flex-app:nth-of-type(2) {
-    width: 60%;
-    background-image: url("/assets/images/ghibli-kodama.jpg");
-    background-position: center;
+    width: 58%;
+}
+
+.flex-app:nth-of-type(2)::before {
+  width: 100%;
+  content: "";
+  background-image: url('/assets/images/ghibli-kodama.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
 .flex-app:nth-of-type(3) {
-    width: 40%;
-    background-image: url("/assets/images/ghibli-totoro.jpg");
-    background-position: center;
+    width: 38%;
+}
+
+.flex-app:nth-of-type(3)::before {
+  width: 100%;
+  content: "";
+  background-image: url('/assets/images/ghibli-totoro.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
 .flex-app:nth-of-type(4) {
-    width: 40%;
-    background-image: url("/assets/images/ghibli-noface.png");
-    background-position: center;
+    width: 38%;
+}
+
+.flex-app:nth-of-type(4)::before {
+  width: 100%;
+  content: "";
+  background-image: url('/assets/images/ghibli-noface.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
 .flex-app:nth-of-type(5) {
-    width: 60%;
-    background-image: url("/assets/images/ghibli-library.png");
-    background-position: center;
+    width: 58%;
+}
+
+
+.flex-app:nth-of-type(5)::before {
+  width: 100%;
+  content: "";
+  background-image: url('/assets/images/ghibli-library.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
 
@@ -302,6 +345,10 @@ nav {
     transition: all 0.5s ease-in-out;
     padding: 13rem 0rem;
     margin: 2rem 0rem;
+    position: relative; 
+    width: 100%;
+    display: flex;
+    align-items: center;
     /* transparent background image to be added of apps */
 }
 
@@ -313,13 +360,44 @@ nav {
 .app-header {
     position: relative;
     width: 15rem;
-    margin: -15rem 0 1.5rem 0;
+    margin: -25rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
     background-color: var(--copper-rose);
     color: var(--derby-brown);
     border: 2px solid var(--copper-rose);
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
+}
+
+/* media screen formatting must be separated into nth types due to previous width formatting */
+@media only screen and (max-width: 768px) {
+  .flex-app:nth-of-type(1) {
+     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-app:nth-of-type(2) {
+     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-app:nth-of-type(3) {
+     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-app:nth-of-type(4) {
+     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-app:nth-of-type(5) {
+     width: 100%;
+  }
 }
 
 
