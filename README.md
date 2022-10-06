@@ -51,6 +51,12 @@ There are 6 main sections of this repository:
 - [ReadMe](https://github.com/abbeydoyle/module-two-challenge/blob/main/README.md) - This file containing an executive overview of the project
 
 
+ ![Porfolio Homepage](./assets/images/module-two-challenge-homepage.png)
+
+ Screenshots of all subpages can be found in the [images](https://github.com/abbeydoyle/module-two-challenge/tree/main/assets/images) folder.
+
+
+
 <!-- Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
@@ -114,6 +120,7 @@ This page features:
 - Nav bar with linked sections
 - Glowing sections
 - Basis for a feedback form
+- Self-designed Favicon image
 
 
 
