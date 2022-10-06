@@ -376,3 +376,63 @@ footer {
 }
 
 /* footer formatting begin */
+
+/* volunteer formatting begin */
+
+.volunteer {
+  outline: 2px dashed var(--copper-rose);
+  transition: all 0.5s ease-in-out;
+  padding: 2rem 2rem;
+  margin: 8rem 2rem;
+  color: var(--derby-brown);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  /* transparent background image to be added of apps */
+}
+
+.volunteer:hover,
+.volunteer-header:hover {
+  box-shadow: inset 0 0 5rem var(--copper-rose), 0 0 5rem var(--copper-rose);
+}
+
+.volunteer .volunteer-header {
+  position: relative;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--copper-rose);
+  color: var(--derby-brown);
+  border: 2px solid var(--copper-rose);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* .volunteer-footer {
+  position:fixed;
+} */
+
+.homepage-return {
+  position: fixed;
+  margin-left: -3.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.homepage-return a {
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  color: var(--coriander);
+  font-size: 2rem;
+}
+
+.homepage-return a:hover {
+  background-color: var(--copper-rose);
+}
+
+.homepage-button {
+  background: var(--derby-brown);
+  color: var(--coriander);
+}
