@@ -497,3 +497,16 @@ footer {
 }
 
 /* interests formatting end */
+
+/* feedback form formatting begin */
+
+fieldset {
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.feedback {
+  padding-top:4rem;
+}
+
+/* feedback form formatting begin */
