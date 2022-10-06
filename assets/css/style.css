@@ -127,13 +127,21 @@ hr.rounded {
     list-style-type: none;
     text-decoration-style: none;
     background-color: var(--wafer);
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
 }
 
 header {
     padding-bottom: 5rem;
 }
+
+nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 1rem;
+    align-self: flex-start;
+}
+
+/* nav bar begins as sticky but bugging once body element is reached - must ask tutor */
+
 
 .nava {
     padding: 0rem 1rem;
@@ -164,6 +172,8 @@ header {
 .about-me-rhs {
     flex: 0 0 40%;
 }
+
+
 
 
 /* .about-me:nth-of-type(2) {
@@ -241,43 +251,58 @@ header {
 .flex-app:nth-of-type(1) {
     width: 100%;
     background-image: url("/assets/images/ghibli-bonsai.jpg");
+    background-position: center;
 }
 
-.flex-app:nth-of-type(1) :not(.app-header) {
-    opacity: 0;
-}
 
 .flex-app:nth-of-type(2) {
     width: 60%;
+    background-image: url("/assets/images/ghibli-kodama.jpg");
+    background-position: center;
 }
 
 .flex-app:nth-of-type(3) {
     width: 40%;
+    background-image: url("/assets/images/ghibli-totoro.jpg");
+    background-position: center;
 }
 
 .flex-app:nth-of-type(4) {
     width: 40%;
+    background-image: url("/assets/images/ghibli-noface.png");
+    background-position: center;
 }
 
 .flex-app:nth-of-type(5) {
     width: 60%;
+    background-image: url("/assets/images/ghibli-library.png");
+    background-position: center;
 }
 
 
 .flex-app {
     outline: 2px dashed var(--copper-rose);
     transition: all 0.5s ease-in-out;
-    padding: 2rem 0rem;
+    padding: 13rem 0rem;
     margin: 2rem 0rem;
     /* transparent background image to be added of apps */
 }
 
-.flex-app:hover {
-    box-shadow: 0 0 5rem var(--copper-rose);
+.flex-app:hover,
+.app-header:hover {
+    box-shadow: 0 0 5rem var(--copper-rose), 0 0 5rem var(--copper-rose);
 }
 
-#app-header {
-    opacity: 1;
+.app-header {
+    position: relative;
+    width: 15rem;
+    margin: -15rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--copper-rose);
+    color: var(--derby-brown);
+    border: 2px solid var(--copper-rose);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
 }
 
 
