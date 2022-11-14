@@ -361,7 +361,7 @@ nav {
 
 .app-header {
     position: relative;
-    width: 15rem;
+    width: 35rem;
     margin: -25rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
     background-color: var(--copper-rose);
