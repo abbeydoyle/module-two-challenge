@@ -246,14 +246,14 @@ nav {
 .flex-app:nth-of-type(1)::before {
   width: 100%;
   content: "";
-  background-image: url('../images/ghibli-bonsai.jpg');
+  background-image: url('../images/MovieMoodboard.png');
   background-size: cover;
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 
